@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ChildrenRecords.ChildrenRecord">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Children Records"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.ChildrenRecords.UI.MainActivity" android:configChanges="orientation|keyboardHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.ChildrenRecords.UI.AddChildActivity" android:parentActivityName="com.example.ChildrenRecords.UI.MainActivity" android:configChanges="orientation|keyboardHidden" />
+        <activity android:name="com.example.ChildrenRecords.UI.SearchForChildActivity" android:parentActivityName="com.example.ChildrenRecords.UI.MainActivity" />
+        <activity android:name="com.example.ChildrenRecords.UI.UpdateInfoActivity" android:parentActivityName="com.example.ChildrenRecords.UI.MainActivity" />
+        <activity android:name="com.example.ChildrenRecords.UI.AddInfoActivity" android:parentActivityName="com.example.ChildrenRecords.UI.MainActivity" />
+        <activity android:name="com.example.ChildrenRecords.UI.SelectInfoViewActivity" android:parentActivityName="com.example.ChildrenRecords.UI.MainActivity"/>
+        <activity android:name="com.example.ChildrenRecords.UI.ChildSpecificInfoActivity" android:parentActivityName="com.example.ChildrenRecords.UI.MainActivity"/>
+        <activity android:name="com.example.ChildrenRecords.UI.ViewAllInfoActivity" android:parentActivityName="com.example.ChildrenRecords.UI.MainActivity"/>
+        <activity android:name="com.example.ChildrenRecords.UI.ViewInfo4SpecificChildActivity" android:parentActivityName="com.example.ChildrenRecords.UI.MainActivity"></activity>
+    </application>
+
+</manifest>
